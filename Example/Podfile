@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DNavAssistantSDK_Example' do
+  pod 'DNavAssistantSDK', :path => '../'
+
+  target 'DNavAssistantSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
