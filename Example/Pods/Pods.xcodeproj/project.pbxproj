@@ -7,69 +7,150 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B95F155510334470C54A8C8CACFFC04 /* DNavAssistantSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6468972AA0C9DBF464C21826A34E740 /* DNavAssistantSDK-dummy.m */; };
-		3B766310D61973F9ACCE255F5AB851CD /* Pods-DNavAssistantSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED6098002F1A2CC4E095F5299CA27629 /* Pods-DNavAssistantSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D7B4E7E06A5C88B59F158C01C9E749 /* BabyCentralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D1F759E37105F4AD5EB9243D71D764 /* BabyCentralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F73F1F81CAAE1BD66A2630E9722CBEF /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA49589FEAAD73002345D0360389E77 /* BabyCentralManager.m */; };
+		0FF4C0279E853B8808661CCED55CB08A /* BabyCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 2367D649ECA8D39B1FEFDFDEDCFB3976 /* BabyCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3845B4FCF4F57923A14D592F3B14E088 /* BabyPeripheralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DBFC844307937D80CAC96365F70F30E /* BabyPeripheralManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A02B6BAE49F0F136B6A434D0ABD8E10 /* DNavAssistantSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F567E5207DFF7B49EFD060FAB72F3B0 /* DNavAssistantSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E0FE9F6193A64BBCC6848B2F4E4CB50 /* Pods-DNavAssistantSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53526AC0253D2C454EE188A8BBAA3E59 /* Pods-DNavAssistantSDK_Tests-dummy.m */; };
-		5A5C447C5519BED78D619EB738E38764 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D56DFC72AB174ABD83EE36E6156D4C /* ReplaceMe.m */; };
-		5DAD3E26523A6BAE220D153A938CE6BC /* DNavAssistantSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7358D511B91CF21C82970F19DDD944C /* DNavAssistantSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B6E59930C811898B4B0DCDD457DA352 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7105D8B4F07EB786DB63F9D19FDA5382 /* Pods-DNavAssistantSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA711853CF61FB1672207E760F54402 /* Pods-DNavAssistantSDK_Example-dummy.m */; };
-		9FCE7719260E45A110C4B74888EDDAF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		CE16673CF267C0CCA1DB4B8BCCD53A12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3F2F90163AFF2E83A8D97FCF72903360 /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 328DFB29DE9D2D34836E6ABE1C43545A /* BabyBluetooth.m */; };
+		449174F8EF91C7DDC34AD671B3117CB7 /* Pods-DNavAssistantSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED6098002F1A2CC4E095F5299CA27629 /* Pods-DNavAssistantSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AF30E8B499B4A598EA099903A092E5A /* Pods-DNavAssistantSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA711853CF61FB1672207E760F54402 /* Pods-DNavAssistantSDK_Example-dummy.m */; };
+		63160BC08DF1705DA3A5B3626DDFF619 /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9530A49EC230CDC040567F330BACCDEA /* BabySpeaker.m */; };
+		6B6E59930C811898B4B0DCDD457DA352 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63AC4D9552C3B68A8453A74A4BF93D7 /* Foundation.framework */; };
+		7C20B110135E64832C3DCDA317786D19 /* BabyPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D19F0BBAFFE8E5A99DCA5E712EFDB /* BabyPeripheralManager.m */; };
+		7CA108D7D2160B23D52C1E1A7173EDE9 /* BabySpeaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 361AD52A28F62116F5ED9568BC31EB72 /* BabySpeaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		872C0555B1F955CBA78F63592225AD5B /* BabyBluetooth.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F24617CE3B1876D13A5E9316C9047B /* BabyBluetooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BDD9FDD4F9A82720ED560BA2FCF0476 /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1E8A6A03879411DAF6E64637B0F2EF /* BabyCallback.m */; };
+		8EE16A351B681EDB194A0FE856820C55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63AC4D9552C3B68A8453A74A4BF93D7 /* Foundation.framework */; };
+		921A3B69F684C300E49774B93E40298E /* BabyBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64929DCCE3FDA24CCE3B1F9FACC4C555 /* BabyBluetooth.framework */; };
+		95134844F3C263B271ADAF7E7AA8C915 /* BabyBluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5B569E14604CEAA5CCBE50E24825B1 /* BabyBluetooth-dummy.m */; };
+		958665977F2F738FFE8424AB79944E46 /* BabyDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 953F8BA32C356C270069AE34F20D2B8D /* BabyDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9696BEF7470EE50446871CFABA63DC40 /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C5CD614064534D03E085D9F289CF4 /* BabyToy.m */; };
+		A00FFF8537CA374A2C44552FEAAB80A4 /* BabyRhythm.h in Headers */ = {isa = PBXBuildFile; fileRef = C09738645507C6E45F3F37D748472B7D /* BabyRhythm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7BAF6B1D66ABCA145630D43E8CB6B36 /* BabyOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B795309B7A08B23AD2C2B756A0AC86 /* BabyOptions.m */; };
+		A90BF51882A5DB51C3E79F6AD4D59D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63AC4D9552C3B68A8453A74A4BF93D7 /* Foundation.framework */; };
+		A9983225E78D8535BBE1D08C0379237D /* DNavAssistantSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 950088D45BAC323E049BAA0E0725D008 /* DNavAssistantSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE9E49FC52285E888815A139CA799BC4 /* BabyOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4682D65AF1C833BA2D903FD8862D054D /* BabyOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E54551EFC18F269BC42C1C26E51FB02E /* Pods-DNavAssistantSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 135B3FA352EDDA917E91393DDAC49D6D /* Pods-DNavAssistantSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F17063813215C9EFF4FB9583BF8FAE6E /* BabyToy.h in Headers */ = {isa = PBXBuildFile; fileRef = 97DA70D78066D5F47E08A7A867280032 /* BabyToy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4DA49CEC3003E287EB7CE59F6C25F46 /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B25A9DC438849922FA08FE6CDDC704 /* BabyRhythm.m */; };
+		F8B679DAB27E2FF25CD88EC6EB9533F0 /* BabyDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 923C565F9AB0B1C49EF3F42A5BEF1B04 /* BabyDefine.m */; };
+		FD312E4CDF2B8387D573EF44CACF28B1 /* DNavAssistantSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E18297BA90D55FAD2949CD17272AC409 /* DNavAssistantSDK-dummy.m */; };
+		FD31B3321630C7B0EFF28D9723E90349 /* DNavAssistantSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF953DD9EBC67134D69836D94811D48 /* DNavAssistantSDK.m */; };
+		FF6026DCB4C3A925C95BC5EA038523A7 /* BabyBluetooth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 602FBB889DD9FA9A52030F42726D0C89 /* BabyBluetooth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDA631988425D7E16E4EAF50E3EF9DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63AC4D9552C3B68A8453A74A4BF93D7 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		961ED35938B6210358958381D28FF05D /* PBXContainerItemProxy */ = {
+		0FF392D387CE3EB8C0E9118019A004E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B78304A0288FD865B07B7CF416F509E6;
+			remoteGlobalIDString = F3FAC3AB9BC7E84DA06C3641D10CED00;
 			remoteInfo = DNavAssistantSDK;
+		};
+		A6A152EA836676C8B2E248028D7A8FF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B1A0F40902F9533C324157F3F2703D;
+			remoteInfo = BabyBluetooth;
+		};
+		BF595AEEDF3AC3A0F168C0D7B0E82014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B1A0F40902F9533C324157F3F2703D;
+			remoteInfo = BabyBluetooth;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		018B2C3BFC4465C07C848A7F9827A8F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01A72606016C487122C43EE7FF673735 /* DNavAssistantSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DNavAssistantSDK.modulemap; sourceTree = "<group>"; };
 		06B589DDDF37BC87E5EDA0CEEB99F3E5 /* Pods-DNavAssistantSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DNavAssistantSDK_Example-resources.sh"; sourceTree = "<group>"; };
 		0A053F64E6EDF431A5FC48A9460B6049 /* Pods-DNavAssistantSDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DNavAssistantSDK_Tests-resources.sh"; sourceTree = "<group>"; };
+		0D790B2BDFF179C8BF3FEB7DB8912483 /* BabyBluetooth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BabyBluetooth.modulemap; sourceTree = "<group>"; };
 		120B211B3485ECDF49CB4E180F6CFA53 /* Pods-DNavAssistantSDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DNavAssistantSDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		135B3FA352EDDA917E91393DDAC49D6D /* Pods-DNavAssistantSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DNavAssistantSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
-		17317F1C95B0EA8E77E992F5F7320F59 /* Pods_DNavAssistantSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DNavAssistantSDK_Example.framework; path = "Pods-DNavAssistantSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15B795309B7A08B23AD2C2B756A0AC86 /* BabyOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyOptions.m; path = Classes/objc/BabyOptions.m; sourceTree = "<group>"; };
+		2367D649ECA8D39B1FEFDFDEDCFB3976 /* BabyCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyCallback.h; path = Classes/objc/BabyCallback.h; sourceTree = "<group>"; };
 		2C415A31E431AB5FA1BA063EF637B3E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F3E287EFFC88586B3407B4ADC02B373 /* Pods-DNavAssistantSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DNavAssistantSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		30E07272293A41200D6E3FD1235893CC /* DNavAssistantSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DNavAssistantSDK-prefix.pch"; sourceTree = "<group>"; };
+		328DFB29DE9D2D34836E6ABE1C43545A /* BabyBluetooth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyBluetooth.m; path = Classes/objc/BabyBluetooth.m; sourceTree = "<group>"; };
+		361AD52A28F62116F5ED9568BC31EB72 /* BabySpeaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabySpeaker.h; path = Classes/objc/BabySpeaker.h; sourceTree = "<group>"; };
 		3E03730B5416F2CD56CC59D55EAD43E6 /* Pods-DNavAssistantSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DNavAssistantSDK_Example.modulemap"; sourceTree = "<group>"; };
+		4682D65AF1C833BA2D903FD8862D054D /* BabyOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyOptions.h; path = Classes/objc/BabyOptions.h; sourceTree = "<group>"; };
+		4F567E5207DFF7B49EFD060FAB72F3B0 /* DNavAssistantSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DNavAssistantSDK-umbrella.h"; sourceTree = "<group>"; };
 		53526AC0253D2C454EE188A8BBAA3E59 /* Pods-DNavAssistantSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DNavAssistantSDK_Tests-dummy.m"; sourceTree = "<group>"; };
-		54D56DFC72AB174ABD83EE36E6156D4C /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = DNavAssistantSDK/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		54FFD095F427D721F852A72D6291C172 /* Pods-DNavAssistantSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DNavAssistantSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5533A05441F34F1768F32175B505CA22 /* BabyBluetooth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BabyBluetooth-prefix.pch"; sourceTree = "<group>"; };
+		5590A52CE509276CC24A5E07BCCBCA66 /* DNavAssistantSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DNavAssistantSDK.framework; path = DNavAssistantSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE782E79049C36BB913B833ACD6F9F8 /* DNavAssistantSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DNavAssistantSDK.xcconfig; sourceTree = "<group>"; };
+		5C1E8A6A03879411DAF6E64637B0F2EF /* BabyCallback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyCallback.m; path = Classes/objc/BabyCallback.m; sourceTree = "<group>"; };
+		5E8C5CD614064534D03E085D9F289CF4 /* BabyToy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyToy.m; path = Classes/objc/BabyToy.m; sourceTree = "<group>"; };
 		5FCBDD97A3E7B10579A0E5907A435948 /* Pods-DNavAssistantSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DNavAssistantSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		602FBB889DD9FA9A52030F42726D0C89 /* BabyBluetooth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BabyBluetooth-umbrella.h"; sourceTree = "<group>"; };
+		64929DCCE3FDA24CCE3B1F9FACC4C555 /* BabyBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BabyBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C82118FA13387AA7CD3D10A2921121D /* Pods-DNavAssistantSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DNavAssistantSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		75B25A9DC438849922FA08FE6CDDC704 /* BabyRhythm.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyRhythm.m; path = Classes/objc/BabyRhythm.m; sourceTree = "<group>"; };
 		76305E25CC870282282A279B057D64CF /* Pods-DNavAssistantSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DNavAssistantSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		80D98B5EC9500476E516A60DA1037087 /* Pods-DNavAssistantSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DNavAssistantSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		88491F951EEC7113962D1AFBA0107946 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AA711853CF61FB1672207E760F54402 /* Pods-DNavAssistantSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DNavAssistantSDK_Example-dummy.m"; sourceTree = "<group>"; };
+		8E7D19F0BBAFFE8E5A99DCA5E712EFDB /* BabyPeripheralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyPeripheralManager.m; path = Classes/objc/BabyPeripheralManager.m; sourceTree = "<group>"; };
+		9183C528384061D3DBDDA277041226B8 /* DNavAssistantSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DNavAssistantSDK-prefix.pch"; sourceTree = "<group>"; };
 		9208B78D7CEDC84C8C258650FF3B797A /* Pods-DNavAssistantSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DNavAssistantSDK_Tests.modulemap"; sourceTree = "<group>"; };
+		923C565F9AB0B1C49EF3F42A5BEF1B04 /* BabyDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyDefine.m; path = Classes/objc/BabyDefine.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		950088D45BAC323E049BAA0E0725D008 /* DNavAssistantSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DNavAssistantSDK.h; path = DNavAssistantSDK/Classes/DNavAssistantSDK.h; sourceTree = "<group>"; };
+		9530A49EC230CDC040567F330BACCDEA /* BabySpeaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabySpeaker.m; path = Classes/objc/BabySpeaker.m; sourceTree = "<group>"; };
+		953F8BA32C356C270069AE34F20D2B8D /* BabyDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyDefine.h; path = Classes/objc/BabyDefine.h; sourceTree = "<group>"; };
 		954B001E4706ADA06D7905CF908BBC9C /* Pods-DNavAssistantSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DNavAssistantSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		965E3D98C017BDE6A9E59D3369D06EEB /* Pods-DNavAssistantSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DNavAssistantSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9C8DB62CE5EE31E86037C9B518212925 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E32544BB7AC8308AC7F7450DADB97A8 /* DNavAssistantSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DNavAssistantSDK.modulemap; sourceTree = "<group>"; };
-		A7358D511B91CF21C82970F19DDD944C /* DNavAssistantSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DNavAssistantSDK-umbrella.h"; sourceTree = "<group>"; };
-		C304873153FC7F6D74D471D0A4224DAA /* DNavAssistantSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DNavAssistantSDK.framework; path = DNavAssistantSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6468972AA0C9DBF464C21826A34E740 /* DNavAssistantSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DNavAssistantSDK-dummy.m"; sourceTree = "<group>"; };
+		97DA70D78066D5F47E08A7A867280032 /* BabyToy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyToy.h; path = Classes/objc/BabyToy.h; sourceTree = "<group>"; };
+		9AF953DD9EBC67134D69836D94811D48 /* DNavAssistantSDK.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DNavAssistantSDK.m; path = DNavAssistantSDK/Classes/DNavAssistantSDK.m; sourceTree = "<group>"; };
+		9DBFC844307937D80CAC96365F70F30E /* BabyPeripheralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyPeripheralManager.h; path = Classes/objc/BabyPeripheralManager.h; sourceTree = "<group>"; };
+		A376A6159F63BA94B801CC6693E01C5D /* Pods_DNavAssistantSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DNavAssistantSDK_Example.framework; path = "Pods-DNavAssistantSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD5B569E14604CEAA5CCBE50E24825B1 /* BabyBluetooth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BabyBluetooth-dummy.m"; sourceTree = "<group>"; };
+		AE04EB2DFD71D2859A093BBEEE9C5FFD /* BabyBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BabyBluetooth.framework; path = BabyBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEA49589FEAAD73002345D0360389E77 /* BabyCentralManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BabyCentralManager.m; path = Classes/objc/BabyCentralManager.m; sourceTree = "<group>"; };
+		C09738645507C6E45F3F37D748472B7D /* BabyRhythm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyRhythm.h; path = Classes/objc/BabyRhythm.h; sourceTree = "<group>"; };
+		C2D1F759E37105F4AD5EB9243D71D764 /* BabyCentralManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyCentralManager.h; path = Classes/objc/BabyCentralManager.h; sourceTree = "<group>"; };
+		CB9FC0F7CE0F73EFCC4676C2636EC45E /* Pods_DNavAssistantSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DNavAssistantSDK_Tests.framework; path = "Pods-DNavAssistantSDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F24617CE3B1876D13A5E9316C9047B /* BabyBluetooth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BabyBluetooth.h; path = Classes/objc/BabyBluetooth.h; sourceTree = "<group>"; };
+		E18297BA90D55FAD2949CD17272AC409 /* DNavAssistantSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DNavAssistantSDK-dummy.m"; sourceTree = "<group>"; };
+		E63AC4D9552C3B68A8453A74A4BF93D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E6BAC14CAB700038775990D68BF9E26F /* Pods-DNavAssistantSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DNavAssistantSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E7EA3A784790C645839C1B0F40D94F04 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED6098002F1A2CC4E095F5299CA27629 /* Pods-DNavAssistantSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DNavAssistantSDK_Example-umbrella.h"; sourceTree = "<group>"; };
-		F512699095E9C5D9D0087F06285F7EA2 /* DNavAssistantSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DNavAssistantSDK.xcconfig; sourceTree = "<group>"; };
-		F79B3B68A13ECE86E30E79A3BB4B41D3 /* Pods_DNavAssistantSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DNavAssistantSDK_Tests.framework; path = "Pods-DNavAssistantSDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1BABA169112C12FFF62C561A53AE62F /* BabyBluetooth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BabyBluetooth.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7CEB9B3D2974C0F217ABF8377CC8A2A6 /* Frameworks */ = {
+		17E86C91CDC7D2B33EE380C91128D730 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE16673CF267C0CCA1DB4B8BCCD53A12 /* Foundation.framework in Frameworks */,
+				8EE16A351B681EDB194A0FE856820C55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D83B9C8F236820856D690F3B39E0EA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90BF51882A5DB51C3E79F6AD4D59D13 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82900D44EFEA2914A43B9DB14EAE24D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921A3B69F684C300E49774B93E40298E /* BabyBluetooth.framework in Frameworks */,
+				FFDA631988425D7E16E4EAF50E3EF9DB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,23 +162,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F72340383C276DA926400E0D4D099096 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9FCE7719260E45A110C4B74888EDDAF4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B433A21675E48BEDEE92E5181099E6D /* Products */ = {
+		040675A1555CFF1BE90BEF33C198CE31 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C304873153FC7F6D74D471D0A4224DAA /* DNavAssistantSDK.framework */,
-				17317F1C95B0EA8E77E992F5F7320F59 /* Pods_DNavAssistantSDK_Example.framework */,
-				F79B3B68A13ECE86E30E79A3BB4B41D3 /* Pods_DNavAssistantSDK_Tests.framework */,
+				F9E448C561C8E5346D321A0A1A5236AE /* BabyBluetooth */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		081D2B3AF0DCB126357DDDFF4068261A /* DNavAssistantSDK */ = {
+			isa = PBXGroup;
+			children = (
+				950088D45BAC323E049BAA0E0725D008 /* DNavAssistantSDK.h */,
+				9AF953DD9EBC67134D69836D94811D48 /* DNavAssistantSDK.m */,
+				5890602B784EAE33B86550F416601A2E /* Support Files */,
+			);
+			name = DNavAssistantSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1B7A60EF06D14EF90B593D675D1DA2CB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				081D2B3AF0DCB126357DDDFF4068261A /* DNavAssistantSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		56484C7F342C77641E3BBB8CDB6C5F6A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E63AC4D9552C3B68A8453A74A4BF93D7 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5890602B784EAE33B86550F416601A2E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				01A72606016C487122C43EE7FF673735 /* DNavAssistantSDK.modulemap */,
+				5AE782E79049C36BB913B833ACD6F9F8 /* DNavAssistantSDK.xcconfig */,
+				E18297BA90D55FAD2949CD17272AC409 /* DNavAssistantSDK-dummy.m */,
+				9183C528384061D3DBDDA277041226B8 /* DNavAssistantSDK-prefix.pch */,
+				4F567E5207DFF7B49EFD060FAB72F3B0 /* DNavAssistantSDK-umbrella.h */,
+				88491F951EEC7113962D1AFBA0107946 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DNavAssistantSDK";
+			sourceTree = "<group>";
+		};
+		6555AA0367B64DFD8F5BB68B72AC9458 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64929DCCE3FDA24CCE3B1F9FACC4C555 /* BabyBluetooth.framework */,
+				56484C7F342C77641E3BBB8CDB6C5F6A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BA24143730551290EA31D2BA695B0C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE04EB2DFD71D2859A093BBEEE9C5FFD /* BabyBluetooth.framework */,
+				5590A52CE509276CC24A5E07BCCBCA66 /* DNavAssistantSDK.framework */,
+				A376A6159F63BA94B801CC6693E01C5D /* Pods_DNavAssistantSDK_Example.framework */,
+				CB9FC0F7CE0F73EFCC4676C2636EC45E /* Pods_DNavAssistantSDK_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,25 +238,12 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				C988D3648703C61E63A404E970BD03BB /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				1B433A21675E48BEDEE92E5181099E6D /* Products */,
+				1B7A60EF06D14EF90B593D675D1DA2CB /* Development Pods */,
+				6555AA0367B64DFD8F5BB68B72AC9458 /* Frameworks */,
+				040675A1555CFF1BE90BEF33C198CE31 /* Pods */,
+				7BA24143730551290EA31D2BA695B0C4 /* Products */,
 				9F709CF8F474EA345D60A5E4F2C2DBC2 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8AF00CBEFABD69CB231FAF211B26672A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9E32544BB7AC8308AC7F7450DADB97A8 /* DNavAssistantSDK.modulemap */,
-				F512699095E9C5D9D0087F06285F7EA2 /* DNavAssistantSDK.xcconfig */,
-				E6468972AA0C9DBF464C21826A34E740 /* DNavAssistantSDK-dummy.m */,
-				30E07272293A41200D6E3FD1235893CC /* DNavAssistantSDK-prefix.pch */,
-				A7358D511B91CF21C82970F19DDD944C /* DNavAssistantSDK-umbrella.h */,
-				9C8DB62CE5EE31E86037C9B518212925 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/DNavAssistantSDK";
 			sourceTree = "<group>";
 		};
 		9F709CF8F474EA345D60A5E4F2C2DBC2 /* Targets Support Files */ = {
@@ -154,30 +273,6 @@
 			path = "Target Support Files/Pods-DNavAssistantSDK_Example";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C988D3648703C61E63A404E970BD03BB /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F24FE3030AE86AA0C03DE8F5B1D8E95C /* DNavAssistantSDK */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		E63120A213D16F19351E3B745656F60C /* Pods-DNavAssistantSDK_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,14 +291,45 @@
 			path = "Target Support Files/Pods-DNavAssistantSDK_Tests";
 			sourceTree = "<group>";
 		};
-		F24FE3030AE86AA0C03DE8F5B1D8E95C /* DNavAssistantSDK */ = {
+		F9E448C561C8E5346D321A0A1A5236AE /* BabyBluetooth */ = {
 			isa = PBXGroup;
 			children = (
-				54D56DFC72AB174ABD83EE36E6156D4C /* ReplaceMe.m */,
-				8AF00CBEFABD69CB231FAF211B26672A /* Support Files */,
+				D0F24617CE3B1876D13A5E9316C9047B /* BabyBluetooth.h */,
+				328DFB29DE9D2D34836E6ABE1C43545A /* BabyBluetooth.m */,
+				2367D649ECA8D39B1FEFDFDEDCFB3976 /* BabyCallback.h */,
+				5C1E8A6A03879411DAF6E64637B0F2EF /* BabyCallback.m */,
+				C2D1F759E37105F4AD5EB9243D71D764 /* BabyCentralManager.h */,
+				AEA49589FEAAD73002345D0360389E77 /* BabyCentralManager.m */,
+				953F8BA32C356C270069AE34F20D2B8D /* BabyDefine.h */,
+				923C565F9AB0B1C49EF3F42A5BEF1B04 /* BabyDefine.m */,
+				4682D65AF1C833BA2D903FD8862D054D /* BabyOptions.h */,
+				15B795309B7A08B23AD2C2B756A0AC86 /* BabyOptions.m */,
+				9DBFC844307937D80CAC96365F70F30E /* BabyPeripheralManager.h */,
+				8E7D19F0BBAFFE8E5A99DCA5E712EFDB /* BabyPeripheralManager.m */,
+				C09738645507C6E45F3F37D748472B7D /* BabyRhythm.h */,
+				75B25A9DC438849922FA08FE6CDDC704 /* BabyRhythm.m */,
+				361AD52A28F62116F5ED9568BC31EB72 /* BabySpeaker.h */,
+				9530A49EC230CDC040567F330BACCDEA /* BabySpeaker.m */,
+				97DA70D78066D5F47E08A7A867280032 /* BabyToy.h */,
+				5E8C5CD614064534D03E085D9F289CF4 /* BabyToy.m */,
+				FFB70BF340DD1785E613DBB6C993721B /* Support Files */,
 			);
-			name = DNavAssistantSDK;
-			path = ../..;
+			name = BabyBluetooth;
+			path = BabyBluetooth;
+			sourceTree = "<group>";
+		};
+		FFB70BF340DD1785E613DBB6C993721B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D790B2BDFF179C8BF3FEB7DB8912483 /* BabyBluetooth.modulemap */,
+				F1BABA169112C12FFF62C561A53AE62F /* BabyBluetooth.xcconfig */,
+				AD5B569E14604CEAA5CCBE50E24825B1 /* BabyBluetooth-dummy.m */,
+				5533A05441F34F1768F32175B505CA22 /* BabyBluetooth-prefix.pch */,
+				602FBB889DD9FA9A52030F42726D0C89 /* BabyBluetooth-umbrella.h */,
+				018B2C3BFC4465C07C848A7F9827A8F0 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BabyBluetooth";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,19 +343,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E5DCD3D7F488CCE8CFD76EBEC5B3842 /* Headers */ = {
+		78FF9AA989CB694EFF033469B7BA5746 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DAD3E26523A6BAE220D153A938CE6BC /* DNavAssistantSDK-umbrella.h in Headers */,
+				3A02B6BAE49F0F136B6A434D0ABD8E10 /* DNavAssistantSDK-umbrella.h in Headers */,
+				A9983225E78D8535BBE1D08C0379237D /* DNavAssistantSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0BC9EAA35CB7FCBD6ECF9BDC19E1D64 /* Headers */ = {
+		B35F85004C408712B56E8B19C332C9FE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B766310D61973F9ACCE255F5AB851CD /* Pods-DNavAssistantSDK_Example-umbrella.h in Headers */,
+				449174F8EF91C7DDC34AD671B3117CB7 /* Pods-DNavAssistantSDK_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE8BBA8BFC025C93BED6CF0B8CAAC4C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6026DCB4C3A925C95BC5EA038523A7 /* BabyBluetooth-umbrella.h in Headers */,
+				872C0555B1F955CBA78F63592225AD5B /* BabyBluetooth.h in Headers */,
+				0FF4C0279E853B8808661CCED55CB08A /* BabyCallback.h in Headers */,
+				09D7B4E7E06A5C88B59F158C01C9E749 /* BabyCentralManager.h in Headers */,
+				958665977F2F738FFE8424AB79944E46 /* BabyDefine.h in Headers */,
+				BE9E49FC52285E888815A139CA799BC4 /* BabyOptions.h in Headers */,
+				3845B4FCF4F57923A14D592F3B14E088 /* BabyPeripheralManager.h in Headers */,
+				A00FFF8537CA374A2C44552FEAAB80A4 /* BabyRhythm.h in Headers */,
+				7CA108D7D2160B23D52C1E1A7173EDE9 /* BabySpeaker.h in Headers */,
+				F17063813215C9EFF4FB9583BF8FAE6E /* BabyToy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,42 +394,61 @@
 			);
 			name = "Pods-DNavAssistantSDK_Tests";
 			productName = "Pods-DNavAssistantSDK_Tests";
-			productReference = F79B3B68A13ECE86E30E79A3BB4B41D3 /* Pods_DNavAssistantSDK_Tests.framework */;
+			productReference = CB9FC0F7CE0F73EFCC4676C2636EC45E /* Pods_DNavAssistantSDK_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B78304A0288FD865B07B7CF416F509E6 /* DNavAssistantSDK */ = {
+		D3E0AC4156AAE0A475627DF602CC8188 /* Pods-DNavAssistantSDK_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2B3880093E4C4ECC72677509A34CEA2 /* Build configuration list for PBXNativeTarget "DNavAssistantSDK" */;
+			buildConfigurationList = 3796BD3937CE47391EFB1563D5C7E371 /* Build configuration list for PBXNativeTarget "Pods-DNavAssistantSDK_Example" */;
 			buildPhases = (
-				AC8AD75B0FD9614C496B9D56F7BA5C3B /* Sources */,
-				7CEB9B3D2974C0F217ABF8377CC8A2A6 /* Frameworks */,
-				2E5DCD3D7F488CCE8CFD76EBEC5B3842 /* Headers */,
+				14D29AA24358465F4F776C77DB5536A1 /* Sources */,
+				17E86C91CDC7D2B33EE380C91128D730 /* Frameworks */,
+				B35F85004C408712B56E8B19C332C9FE /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = DNavAssistantSDK;
-			productName = DNavAssistantSDK;
-			productReference = C304873153FC7F6D74D471D0A4224DAA /* DNavAssistantSDK.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FC126DEA28C24B9DB2AC7D0216B7597E /* Pods-DNavAssistantSDK_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FC4E5A2B324BB4574E854D8F73383B88 /* Build configuration list for PBXNativeTarget "Pods-DNavAssistantSDK_Example" */;
-			buildPhases = (
-				B9E5BC54CA0C59B78A73E4BA5E998525 /* Sources */,
-				F72340383C276DA926400E0D4D099096 /* Frameworks */,
-				E0BC9EAA35CB7FCBD6ECF9BDC19E1D64 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				731C2A5E0FE93BBF5A1070E56C2A736E /* PBXTargetDependency */,
+				6307D8B14129C86401CED507A3E00569 /* PBXTargetDependency */,
+				47D5AAD218A72207226E100B3193FAC2 /* PBXTargetDependency */,
 			);
 			name = "Pods-DNavAssistantSDK_Example";
 			productName = "Pods-DNavAssistantSDK_Example";
-			productReference = 17317F1C95B0EA8E77E992F5F7320F59 /* Pods_DNavAssistantSDK_Example.framework */;
+			productReference = A376A6159F63BA94B801CC6693E01C5D /* Pods_DNavAssistantSDK_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F3FAC3AB9BC7E84DA06C3641D10CED00 /* DNavAssistantSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F585B19902316926399AE31E6EBE4DFF /* Build configuration list for PBXNativeTarget "DNavAssistantSDK" */;
+			buildPhases = (
+				4BAC3CB3C33F0E106AB9FC77247E19FB /* Sources */,
+				82900D44EFEA2914A43B9DB14EAE24D8 /* Frameworks */,
+				78FF9AA989CB694EFF033469B7BA5746 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B17B3AD3ECF0942412445A93FBA8E5C /* PBXTargetDependency */,
+			);
+			name = DNavAssistantSDK;
+			productName = DNavAssistantSDK;
+			productReference = 5590A52CE509276CC24A5E07BCCBCA66 /* DNavAssistantSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4B1A0F40902F9533C324157F3F2703D /* BabyBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8165C860ABA673867F813372969174B9 /* Build configuration list for PBXNativeTarget "BabyBluetooth" */;
+			buildPhases = (
+				3708EDAD2C7A1276ABB839D39C0601D0 /* Sources */,
+				3D83B9C8F236820856D690F3B39E0EA4 /* Frameworks */,
+				CDE8BBA8BFC025C93BED6CF0B8CAAC4C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BabyBluetooth;
+			productName = BabyBluetooth;
+			productReference = AE04EB2DFD71D2859A093BBEEE9C5FFD /* BabyBluetooth.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -305,12 +468,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 1B433A21675E48BEDEE92E5181099E6D /* Products */;
+			productRefGroup = 7BA24143730551290EA31D2BA695B0C4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B78304A0288FD865B07B7CF416F509E6 /* DNavAssistantSDK */,
-				FC126DEA28C24B9DB2AC7D0216B7597E /* Pods-DNavAssistantSDK_Example */,
+				F4B1A0F40902F9533C324157F3F2703D /* BabyBluetooth */,
+				F3FAC3AB9BC7E84DA06C3641D10CED00 /* DNavAssistantSDK */,
+				D3E0AC4156AAE0A475627DF602CC8188 /* Pods-DNavAssistantSDK_Example */,
 				A79468CAE39282120D433C1271924C43 /* Pods-DNavAssistantSDK_Tests */,
 			);
 		};
@@ -325,35 +489,166 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC8AD75B0FD9614C496B9D56F7BA5C3B /* Sources */ = {
+		14D29AA24358465F4F776C77DB5536A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B95F155510334470C54A8C8CACFFC04 /* DNavAssistantSDK-dummy.m in Sources */,
-				5A5C447C5519BED78D619EB738E38764 /* ReplaceMe.m in Sources */,
+				5AF30E8B499B4A598EA099903A092E5A /* Pods-DNavAssistantSDK_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9E5BC54CA0C59B78A73E4BA5E998525 /* Sources */ = {
+		3708EDAD2C7A1276ABB839D39C0601D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7105D8B4F07EB786DB63F9D19FDA5382 /* Pods-DNavAssistantSDK_Example-dummy.m in Sources */,
+				95134844F3C263B271ADAF7E7AA8C915 /* BabyBluetooth-dummy.m in Sources */,
+				3F2F90163AFF2E83A8D97FCF72903360 /* BabyBluetooth.m in Sources */,
+				8BDD9FDD4F9A82720ED560BA2FCF0476 /* BabyCallback.m in Sources */,
+				0F73F1F81CAAE1BD66A2630E9722CBEF /* BabyCentralManager.m in Sources */,
+				F8B679DAB27E2FF25CD88EC6EB9533F0 /* BabyDefine.m in Sources */,
+				A7BAF6B1D66ABCA145630D43E8CB6B36 /* BabyOptions.m in Sources */,
+				7C20B110135E64832C3DCDA317786D19 /* BabyPeripheralManager.m in Sources */,
+				F4DA49CEC3003E287EB7CE59F6C25F46 /* BabyRhythm.m in Sources */,
+				63160BC08DF1705DA3A5B3626DDFF619 /* BabySpeaker.m in Sources */,
+				9696BEF7470EE50446871CFABA63DC40 /* BabyToy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BAC3CB3C33F0E106AB9FC77247E19FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD312E4CDF2B8387D573EF44CACF28B1 /* DNavAssistantSDK-dummy.m in Sources */,
+				FD31B3321630C7B0EFF28D9723E90349 /* DNavAssistantSDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		731C2A5E0FE93BBF5A1070E56C2A736E /* PBXTargetDependency */ = {
+		1B17B3AD3ECF0942412445A93FBA8E5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BabyBluetooth;
+			target = F4B1A0F40902F9533C324157F3F2703D /* BabyBluetooth */;
+			targetProxy = BF595AEEDF3AC3A0F168C0D7B0E82014 /* PBXContainerItemProxy */;
+		};
+		47D5AAD218A72207226E100B3193FAC2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DNavAssistantSDK;
-			target = B78304A0288FD865B07B7CF416F509E6 /* DNavAssistantSDK */;
-			targetProxy = 961ED35938B6210358958381D28FF05D /* PBXContainerItemProxy */;
+			target = F3FAC3AB9BC7E84DA06C3641D10CED00 /* DNavAssistantSDK */;
+			targetProxy = 0FF392D387CE3EB8C0E9118019A004E7 /* PBXContainerItemProxy */;
+		};
+		6307D8B14129C86401CED507A3E00569 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BabyBluetooth;
+			target = F4B1A0F40902F9533C324157F3F2703D /* BabyBluetooth */;
+			targetProxy = A6A152EA836676C8B2E248028D7A8FF7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		20D2DC59AC3ED740BB4129D977DE0CC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1BABA169112C12FFF62C561A53AE62F /* BabyBluetooth.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BabyBluetooth/BabyBluetooth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BabyBluetooth/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BabyBluetooth/BabyBluetooth.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BabyBluetooth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2D7D68A035E8C0F0306735D7F4BF5BE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AE782E79049C36BB913B833ACD6F9F8 /* DNavAssistantSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DNavAssistantSDK/DNavAssistantSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DNavAssistantSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DNavAssistantSDK/DNavAssistantSDK.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DNavAssistantSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		51ADD3457EA1C6025C8DD11737B30646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6BAC14CAB700038775990D68BF9E26F /* Pods-DNavAssistantSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DNavAssistantSDK_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DNavAssistantSDK_Example/Pods-DNavAssistantSDK_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DNavAssistantSDK_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		5ADE9EF95D95962404ED0C120CB67CF8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 80D98B5EC9500476E516A60DA1037087 /* Pods-DNavAssistantSDK_Tests.release.xcconfig */;
@@ -470,9 +765,9 @@
 			};
 			name = Release;
 		};
-		7646DE224163CC2EFE16F9436826E56A /* Debug */ = {
+		A4FFC95AA7D01AAA64ADD331583ABC55 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6BAC14CAB700038775990D68BF9E26F /* Pods-DNavAssistantSDK_Example.debug.xcconfig */;
+			baseConfigurationReference = F1BABA169112C12FFF62C561A53AE62F /* BabyBluetooth.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -486,20 +781,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DNavAssistantSDK_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/BabyBluetooth/BabyBluetooth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BabyBluetooth/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DNavAssistantSDK_Example/Pods-DNavAssistantSDK_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/BabyBluetooth/BabyBluetooth.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_DNavAssistantSDK_Example;
+				PRODUCT_NAME = BabyBluetooth;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -555,42 +847,9 @@
 			};
 			name = Debug;
 		};
-		CB5C805E5E96086119DB656410BBCC72 /* Release */ = {
+		EE13564E068D0FB5CC568D47554EB946 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F512699095E9C5D9D0087F06285F7EA2 /* DNavAssistantSDK.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DNavAssistantSDK/DNavAssistantSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DNavAssistantSDK/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DNavAssistantSDK/DNavAssistantSDK.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = DNavAssistantSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CB882DFD7E4C45F14513641ECC71EC68 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F512699095E9C5D9D0087F06285F7EA2 /* DNavAssistantSDK.xcconfig */;
+			baseConfigurationReference = 5AE782E79049C36BB913B833ACD6F9F8 /* DNavAssistantSDK.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -621,7 +880,7 @@
 			};
 			name = Debug;
 		};
-		E951F48CCF4EA5C82A775A6409CB07EF /* Release */ = {
+		FB52DF962871598F4E0FB60BF93EFDED /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 54FFD095F427D721F852A72D6291C172 /* Pods-DNavAssistantSDK_Example.release.xcconfig */;
 			buildSettings = {
@@ -669,11 +928,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2B3880093E4C4ECC72677509A34CEA2 /* Build configuration list for PBXNativeTarget "DNavAssistantSDK" */ = {
+		3796BD3937CE47391EFB1563D5C7E371 /* Build configuration list for PBXNativeTarget "Pods-DNavAssistantSDK_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB882DFD7E4C45F14513641ECC71EC68 /* Debug */,
-				CB5C805E5E96086119DB656410BBCC72 /* Release */,
+				51ADD3457EA1C6025C8DD11737B30646 /* Debug */,
+				FB52DF962871598F4E0FB60BF93EFDED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8165C860ABA673867F813372969174B9 /* Build configuration list for PBXNativeTarget "BabyBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4FFC95AA7D01AAA64ADD331583ABC55 /* Debug */,
+				20D2DC59AC3ED740BB4129D977DE0CC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F585B19902316926399AE31E6EBE4DFF /* Build configuration list for PBXNativeTarget "DNavAssistantSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE13564E068D0FB5CC568D47554EB946 /* Debug */,
+				2D7D68A035E8C0F0306735D7F4BF5BE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -683,15 +960,6 @@
 			buildConfigurations = (
 				708761FED6C79718E75F35A2442E64AD /* Debug */,
 				5ADE9EF95D95962404ED0C120CB67CF8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FC4E5A2B324BB4574E854D8F73383B88 /* Build configuration list for PBXNativeTarget "Pods-DNavAssistantSDK_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7646DE224163CC2EFE16F9436826E56A /* Debug */,
-				E951F48CCF4EA5C82A775A6409CB07EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

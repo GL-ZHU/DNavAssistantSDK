@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		CCC53BA61F710AFE00BE6053 /* DNavAssistantSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC53BA51F710AFE00BE6053 /* DNavAssistantSDK.m */; };
+		CCC53BCE1F71180700BE6053 /* DNavBlockProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC53BCD1F71180700BE6053 /* DNavBlockProperty.m */; };
+		CCC53BD01F71194A00BE6053 /* DNavStaticString.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC53BCF1F71194A00BE6053 /* DNavStaticString.m */; };
 		D43485919A47DF3EA3675E7D /* Pods_DNavAssistantSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A503D6AC3E1C628832B665B /* Pods_DNavAssistantSDK_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		AF619CE4B383262984849191 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CCC53BA41F710AFE00BE6053 /* DNavAssistantSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNavAssistantSDK.h; sourceTree = "<group>"; };
 		CCC53BA51F710AFE00BE6053 /* DNavAssistantSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNavAssistantSDK.m; sourceTree = "<group>"; };
+		CCC53BCD1F71180700BE6053 /* DNavBlockProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNavBlockProperty.m; sourceTree = "<group>"; };
+		CCC53BCF1F71194A00BE6053 /* DNavStaticString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNavStaticString.m; sourceTree = "<group>"; };
 		CDD17A20129217D270260A54 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DE60DFAE21D022D5FF77EFB8 /* Pods-DNavAssistantSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNavAssistantSDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNavAssistantSDK_Tests/Pods-DNavAssistantSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E9FA3695CB1468960EF20785 /* DNavAssistantSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DNavAssistantSDK.podspec; path = ../DNavAssistantSDK.podspec; sourceTree = "<group>"; };
@@ -203,6 +207,8 @@
 		CCC53BA31F710AB600BE6053 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CCC53BCD1F71180700BE6053 /* DNavBlockProperty.m */,
+				CCC53BCF1F71194A00BE6053 /* DNavStaticString.m */,
 				CCC53BA41F710AFE00BE6053 /* DNavAssistantSDK.h */,
 				CCC53BA51F710AFE00BE6053 /* DNavAssistantSDK.m */,
 			);
@@ -350,10 +356,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DNavAssistantSDK_Example/Pods-DNavAssistantSDK_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BabyBluetooth/BabyBluetooth.framework",
 				"${BUILT_PRODUCTS_DIR}/DNavAssistantSDK/DNavAssistantSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BabyBluetooth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DNavAssistantSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +424,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC53BD01F71194A00BE6053 /* DNavStaticString.m in Sources */,
+				CCC53BCE1F71180700BE6053 /* DNavBlockProperty.m in Sources */,
 				6003F59E195388D20070C39A /* AAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* AViewController.m in Sources */,
 				CCC53BA61F710AFE00BE6053 /* DNavAssistantSDK.m in Sources */,
