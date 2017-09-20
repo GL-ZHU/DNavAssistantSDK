@@ -110,6 +110,7 @@
         }
     }];
     self.baby.having(self.peripheral).and.channel(CHANLE_NAME).then.connectToPeripherals().discoverServices().discoverCharacteristics().readValueForCharacteristic().discoverDescriptorsForCharacteristic().readValueForDescriptors().begin();
+    
 }
 
 - (void)switchChannelTo:(DNavAssistantSDKChannel)channel{
