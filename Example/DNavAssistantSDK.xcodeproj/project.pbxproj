@@ -23,9 +23,11 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		CCB898A61F7211A300FD3D8D /* DNavAssistantRequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB898A51F7211A300FD3D8D /* DNavAssistantRequestData.m */; };
+		CCB898A91F7213F800FD3D8D /* NSData+DNavAssistantSDKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB898A81F7213F800FD3D8D /* NSData+DNavAssistantSDKExtension.m */; };
 		CCC53BA61F710AFE00BE6053 /* DNavAssistantSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC53BA51F710AFE00BE6053 /* DNavAssistantSDK.m */; };
-		CCC53BCE1F71180700BE6053 /* DNavBlockProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC53BCD1F71180700BE6053 /* DNavBlockProperty.m */; };
-		CCC53BD01F71194A00BE6053 /* DNavStaticString.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC53BCF1F71194A00BE6053 /* DNavStaticString.m */; };
+		CCC53BCE1F71180700BE6053 /* DNavBlockProperty.h in Sources */ = {isa = PBXBuildFile; fileRef = CCC53BCD1F71180700BE6053 /* DNavBlockProperty.h */; };
+		CCC53BD01F71194A00BE6053 /* DNavStaticString.h in Sources */ = {isa = PBXBuildFile; fileRef = CCC53BCF1F71194A00BE6053 /* DNavStaticString.h */; };
 		D43485919A47DF3EA3675E7D /* Pods_DNavAssistantSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A503D6AC3E1C628832B665B /* Pods_DNavAssistantSDK_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,10 +69,14 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF619CE4B383262984849191 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CCB898A41F7211A300FD3D8D /* DNavAssistantRequestData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNavAssistantRequestData.h; sourceTree = "<group>"; };
+		CCB898A51F7211A300FD3D8D /* DNavAssistantRequestData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNavAssistantRequestData.m; sourceTree = "<group>"; };
+		CCB898A71F7213F800FD3D8D /* NSData+DNavAssistantSDKExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+DNavAssistantSDKExtension.h"; sourceTree = "<group>"; };
+		CCB898A81F7213F800FD3D8D /* NSData+DNavAssistantSDKExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+DNavAssistantSDKExtension.m"; sourceTree = "<group>"; };
 		CCC53BA41F710AFE00BE6053 /* DNavAssistantSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNavAssistantSDK.h; sourceTree = "<group>"; };
 		CCC53BA51F710AFE00BE6053 /* DNavAssistantSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNavAssistantSDK.m; sourceTree = "<group>"; };
-		CCC53BCD1F71180700BE6053 /* DNavBlockProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNavBlockProperty.m; sourceTree = "<group>"; };
-		CCC53BCF1F71194A00BE6053 /* DNavStaticString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNavStaticString.m; sourceTree = "<group>"; };
+		CCC53BCD1F71180700BE6053 /* DNavBlockProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNavBlockProperty.h; sourceTree = "<group>"; };
+		CCC53BCF1F71194A00BE6053 /* DNavStaticString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNavStaticString.h; sourceTree = "<group>"; };
 		CDD17A20129217D270260A54 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DE60DFAE21D022D5FF77EFB8 /* Pods-DNavAssistantSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNavAssistantSDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNavAssistantSDK_Tests/Pods-DNavAssistantSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E9FA3695CB1468960EF20785 /* DNavAssistantSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DNavAssistantSDK.podspec; path = ../DNavAssistantSDK.podspec; sourceTree = "<group>"; };
@@ -207,10 +213,14 @@
 		CCC53BA31F710AB600BE6053 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CCC53BCD1F71180700BE6053 /* DNavBlockProperty.m */,
-				CCC53BCF1F71194A00BE6053 /* DNavStaticString.m */,
+				CCC53BCD1F71180700BE6053 /* DNavBlockProperty.h */,
+				CCC53BCF1F71194A00BE6053 /* DNavStaticString.h */,
 				CCC53BA41F710AFE00BE6053 /* DNavAssistantSDK.h */,
 				CCC53BA51F710AFE00BE6053 /* DNavAssistantSDK.m */,
+				CCB898A41F7211A300FD3D8D /* DNavAssistantRequestData.h */,
+				CCB898A51F7211A300FD3D8D /* DNavAssistantRequestData.m */,
+				CCB898A71F7213F800FD3D8D /* NSData+DNavAssistantSDKExtension.h */,
+				CCB898A81F7213F800FD3D8D /* NSData+DNavAssistantSDKExtension.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -269,6 +279,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "GL-ZHU";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = VT7VH43TTE;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -424,11 +437,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCC53BD01F71194A00BE6053 /* DNavStaticString.m in Sources */,
-				CCC53BCE1F71180700BE6053 /* DNavBlockProperty.m in Sources */,
+				CCB898A91F7213F800FD3D8D /* NSData+DNavAssistantSDKExtension.m in Sources */,
+				CCC53BD01F71194A00BE6053 /* DNavStaticString.h in Sources */,
+				CCC53BCE1F71180700BE6053 /* DNavBlockProperty.h in Sources */,
 				6003F59E195388D20070C39A /* AAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* AViewController.m in Sources */,
 				CCC53BA61F710AFE00BE6053 /* DNavAssistantSDK.m in Sources */,
+				CCB898A61F7211A300FD3D8D /* DNavAssistantRequestData.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,6 +572,7 @@
 			baseConfigurationReference = 660C5EC8E332601957445065 /* Pods-DNavAssistantSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VT7VH43TTE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DNavAssistantSDK/DNavAssistantSDK-Prefix.pch";
 				INFOPLIST_FILE = "DNavAssistantSDK/DNavAssistantSDK-Info.plist";
@@ -572,6 +588,7 @@
 			baseConfigurationReference = 2AFDA8ADFBDF176842AD6C4A /* Pods-DNavAssistantSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VT7VH43TTE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DNavAssistantSDK/DNavAssistantSDK-Prefix.pch";
 				INFOPLIST_FILE = "DNavAssistantSDK/DNavAssistantSDK-Info.plist";

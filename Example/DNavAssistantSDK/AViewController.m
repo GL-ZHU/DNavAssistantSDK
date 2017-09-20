@@ -7,6 +7,7 @@
 //
 
 #import "AViewController.h"
+#import "DNavAssistantSDK.h"
 
 @interface AViewController ()
 
@@ -17,7 +18,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    DNavAssistantSDK *sdk = [DNavAssistantSDK defaultSDK];
+    [sdk contentBluetooth:^(NSString *buletoothName) {
+        NSLog(@"连接成功的蓝牙名称%@",buletoothName);
+        
+        [sdk switchChannelTo:DNavAssistantSDKChannelRTK];
+        [sdk RKTChannelResponse:^(NSData *response) {
+            
+            NSLog(@"%@",response);
+        }];
+        
+    } withContentStatus:^(NSUInteger status) {
+        
+        NSLog(@"当前连接状态:%ld",status);
+    }];
 }
 
 - (void)didReceiveMemoryWarning

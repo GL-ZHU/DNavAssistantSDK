@@ -10,3 +10,4 @@
 /// 连接蓝牙成功
 typedef void(^ContentSuccess)(NSString *buletoothName);
 typedef void(^ContentStatus)(NSUInteger status);
+typedef void(^DifferentialResponse)(NSData *response);

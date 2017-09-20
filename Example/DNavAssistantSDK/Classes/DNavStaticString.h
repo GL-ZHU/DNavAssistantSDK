@@ -10,7 +10,7 @@
 
 #define CHANLE_NAME    NSStringFromClass([self class])
 /// 默认连接的蓝牙名称
-static NSString * const BluetoothName = @"as";
+static NSString * const BluetoothName = @"Basegnss";
 /// 服务号
 static NSString * const PERIPHERAL_SERVICE = @"FFE0";
 /// 特征号

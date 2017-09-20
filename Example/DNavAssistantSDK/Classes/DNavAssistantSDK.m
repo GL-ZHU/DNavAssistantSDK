@@ -7,7 +7,8 @@
 //
 
 #import "DNavAssistantSDK.h"
-#import "DNavStaticString.m"
+#import "DNavStaticString.h"
+#import "DNavAssistantRequestData.h"
 #import <BabyBluetooth/BabyBluetooth.h>
 
 @interface DNavAssistantSDK()
@@ -16,7 +17,9 @@
 @property(nonatomic,copy)ContentSuccess selfContentSuccess;
 @property(nonatomic,copy)ContentStatus selfContentStatus;
 @property(nonatomic,strong)CBPeripheral *peripheral;
-
+@property(nonatomic,strong)CBCharacteristic *characteristic;
+@property(nonatomic,assign)DNavAssistantSDKChannel currentChannel;
+@property(nonatomic,strong)DNavAssistantRequestData *requestData;
 @end
 
 @implementation DNavAssistantSDK
@@ -30,6 +33,16 @@
         _SDK.baby = [[BabyBluetooth alloc] init];
     });
     return _SDK;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.currentChannel = -1;
+        self.requestData = [[DNavAssistantRequestData alloc] init];
+    }
+    return self;
 }
 
 - (void)contentBluetooth:(ContentSuccess)successBlock withContentStatus:(ContentStatus)statusBlock{
@@ -62,7 +75,6 @@
         [weakSelf.baby AutoReconnect:weakSelf.peripheral];
         // 停止扫描
         [weakSelf.baby cancelScan];
-        NSLog(@"设备：%@--连接成功",peripheral.name);
     }];
     [self.baby setBlockOnFailToConnectAtChannel:CHANLE_NAME block:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
         if (weakSelf.selfContentStatus) {
@@ -71,10 +83,8 @@
     }];
     // 设备断开连接的委托
     [self.baby setBlockOnDisconnectAtChannel:CHANLE_NAME block:^(CBCentralManager *central, CBPeripheral *peripheral, NSError *error) {
-        if (weakSelf.selfContentStatus) {
-            weakSelf.selfContentStatus(DNavAssistantSDKContentDisconnect);
+        if (weakSelf.selfContentStatus) { weakSelf.selfContentStatus(DNavAssistantSDKContentDisconnect);
         }
-        NSLog(@"设备：%@--断开连接",peripheral.name);
     }];
 }
 
@@ -86,18 +96,60 @@
             for (CBCharacteristic *characteristic in service.characteristics) {
                 if ([characteristic.UUID.UUIDString isEqualToString:PERIPHERAL_CHARACTERISTICS]) {
                     // 连接服务和特征成功
-                    if (weakSelf.selfContentSuccess) {
+                    weakSelf.characteristic = characteristic;
+                    if (weakSelf.selfContentSuccess){
                         weakSelf.selfContentSuccess(weakSelf.peripheral.name);
                     }
                     if (weakSelf.selfContentStatus) {
                         weakSelf.selfContentStatus(DNavAssistantSDKContentSuccess);
                     }
+                    // 开启通知
+                    [weakSelf.peripheral setNotifyValue:YES forCharacteristic:weakSelf.characteristic];
                 }
             }
         }
     }];
     self.baby.having(self.peripheral).and.channel(CHANLE_NAME).then.connectToPeripherals().discoverServices().discoverCharacteristics().readValueForCharacteristic().discoverDescriptorsForCharacteristic().readValueForDescriptors().begin();
 }
-     
+
+- (void)switchChannelTo:(DNavAssistantSDKChannel)channel{
+    self.currentChannel = channel;
+    if (self.baby == nil || self.peripheral == nil || self.characteristic == nil) {
+        NSLog(@"在调用switchChannelTo:之前先执行contentBluetooth: withContentStatus: 连接蓝牙!");
+        return ;
+    }
+    switch (channel) {
+        case DNavAssistantSDKChannelRTK:
+        {
+            NSData *request = [self.requestData switchDifferentialChannel];
+            [self writeData:request];
+        }
+            break;
+        case DNavAssistantSDKChannelDataControl:
+        {
+            
+        }
+            break;
+        default:
+            break;
+    }
+    
+}
+
+- (void)writeData:(NSData *)data{
+    [self.peripheral writeValue:data forCharacteristic:self.characteristic type:CBCharacteristicWriteWithoutResponse];
+}
+- (void)RKTChannelResponse:(DifferentialResponse)responseBlock{
+    if (self.currentChannel != DNavAssistantSDKChannelRTK) {
+        NSLog(@"在调用RKTChannelResponse:之前，需要先switchChannelTo:到DNavAssistantSDKChannelRTK");
+        return ;
+    }
+    
+    [self.baby notify:self.peripheral characteristic:self.characteristic block:^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
+        if (responseBlock && error == nil) {
+            responseBlock(characteristics.value);
+        }
+    }];
+}
 
 @end
