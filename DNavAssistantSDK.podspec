@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DNavAssistantSDK'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'DNavAssistantSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -29,10 +29,8 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.vendored_frameworks = 'DNavAssistantSDK/Classes/DNavAssistantSDK_iOS.framework'
   s.dependency 'BabyBluetooth'
-  s.vendored_frameworks = [
-    'DNavAssistantSDK/Classes/*.framework'
-  ]
   # s.resource_bundles = {
   #   'DNavAssistantSDK' => ['DNavAssistantSDK/Assets/*.png']
   # }

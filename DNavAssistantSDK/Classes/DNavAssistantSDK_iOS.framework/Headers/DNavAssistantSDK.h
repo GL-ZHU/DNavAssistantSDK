@@ -62,7 +62,6 @@ typedef void(^GsDataControlResult)(NSDictionary *result);
  切换频道
 
  @param channel 频道
- @param completionBlock 完成
  */
 - (void)switchChannel:(DNavAssistantSDKChannel)channel;
 

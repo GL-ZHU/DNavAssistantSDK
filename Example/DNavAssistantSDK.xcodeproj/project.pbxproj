@@ -132,7 +132,6 @@
 		6003F593195388D20070C39A /* Example for DNavAssistantSDK */ = {
 			isa = PBXGroup;
 			children = (
-				CCC53BA31F710AB600BE6053 /* Classes */,
 				6003F59C195388D20070C39A /* AAppDelegate.h */,
 				6003F59D195388D20070C39A /* AAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -195,13 +194,6 @@
 				DE60DFAE21D022D5FF77EFB8 /* Pods-DNavAssistantSDK_Tests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		CCC53BA31F710AB600BE6053 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
