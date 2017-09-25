@@ -1,6 +1,0 @@
-framework module DNavAssistantSDK {
-  umbrella header "DNavAssistantSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}
