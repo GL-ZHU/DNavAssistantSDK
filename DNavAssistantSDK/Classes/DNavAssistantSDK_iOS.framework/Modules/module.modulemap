@@ -1,0 +1,6 @@
+framework module DNavAssistantSDK_iOS {
+  umbrella header "DNavAssistantSDK_iOS.h"
+
+  export *
+  module * { export * }
+}
