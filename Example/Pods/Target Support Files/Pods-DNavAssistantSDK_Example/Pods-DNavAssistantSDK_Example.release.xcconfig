@@ -1,8 +1,9 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/BabyBluetooth" "$PODS_CONFIGURATION_BUILD_DIR/DNavAssistantSDK"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/BabyBluetooth" "${PODS_ROOT}/../../DNavAssistantSDK/Classes"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DNavAssistantSDK"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/BabyBluetooth/BabyBluetooth.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/DNavAssistantSDK/DNavAssistantSDK.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "BabyBluetooth" -framework "DNavAssistantSDK"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/BabyBluetooth/BabyBluetooth.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/DNavAssistantSDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "BabyBluetooth" -framework "DNavAssistantSDK_iOS"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

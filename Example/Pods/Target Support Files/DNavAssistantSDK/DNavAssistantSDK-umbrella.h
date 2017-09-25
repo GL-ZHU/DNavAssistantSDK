@@ -10,7 +10,10 @@
 #endif
 #endif
 
+#import "DNavAssistantAPI.h"
+#import "DNavAssistantDataControl.h"
 #import "DNavAssistantSDK.h"
+#import "DNavStaticString.h"
 
 FOUNDATION_EXPORT double DNavAssistantSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char DNavAssistantSDKVersionString[];

@@ -7,9 +7,12 @@
 //
 
 #import "AViewController.h"
-#import "DNavAssistantSDK.h"
+#import <DNavAssistantSDK_iOS/DNavAssistantSDK_iOS.h>
 
 @interface AViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *content;
+
 
 @end
 
@@ -18,21 +21,41 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+    self.name.text = @"连接中...";
     DNavAssistantSDK *sdk = [DNavAssistantSDK defaultSDK];
     [sdk contentBluetooth:^(NSString *buletoothName) {
         NSLog(@"连接成功的蓝牙名称%@",buletoothName);
+
+        [sdk switchChannel:DNavAssistantSDKChannelRTK];
         
-        [sdk switchChannelTo:DNavAssistantSDKChannelRTK];
-        [sdk RKTChannelResponse:^(NSData *response) {
-            
-            NSLog(@"%@",response);
-        }];
-        
-    } withContentStatus:^(NSUInteger status) {
-        
+        self.name.text = buletoothName;
+    } failed:^(NSString *reason) {
+        NSLog(@"%@",reason);
+    } withContentStatus:^(DNavAssistantSDKContentStatus status) {
         NSLog(@"当前连接状态:%ld",status);
     }];
+    
+}
+
+- (IBAction)send:(id)sender {
+    DNavAssistantSDK *sdk = [DNavAssistantSDK defaultSDK];
+    
+    [sdk RTKChannelStartResponse:^(NSData *response) {
+        NSLog(@"%@",response);
+    }];
+    
+//    [sdk switchChannel:DNavAssistantSDKChannelDataControl];
+//    [sdk groundStationChannelDataControl:^(DNavAssistantDataControl *dataControl) {
+//        dataControl.read(DNSearchStar);
+//    } response:^(NSDictionary *result) {
+//        NSLog(@"%@",result);
+//    }];
+//
+//    [sdk groundStationChannelDataControl:^(DNavAssistantDataControl *dataControl) {
+//        dataControl.write(DNFixPosition).height(20).latitude(120.09).longitude(12);
+//    } response:^(NSDictionary *result) {
+//        NSLog(@"%@",result);
+//    }];
 }
 
 - (void)didReceiveMemoryWarning

@@ -23,11 +23,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		CCB898A61F7211A300FD3D8D /* DNavAssistantRequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB898A51F7211A300FD3D8D /* DNavAssistantRequestData.m */; };
-		CCB898A91F7213F800FD3D8D /* NSData+DNavAssistantSDKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB898A81F7213F800FD3D8D /* NSData+DNavAssistantSDKExtension.m */; };
-		CCC53BA61F710AFE00BE6053 /* DNavAssistantSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC53BA51F710AFE00BE6053 /* DNavAssistantSDK.m */; };
-		CCC53BCE1F71180700BE6053 /* DNavBlockProperty.h in Sources */ = {isa = PBXBuildFile; fileRef = CCC53BCD1F71180700BE6053 /* DNavBlockProperty.h */; };
-		CCC53BD01F71194A00BE6053 /* DNavStaticString.h in Sources */ = {isa = PBXBuildFile; fileRef = CCC53BCF1F71194A00BE6053 /* DNavStaticString.h */; };
 		D43485919A47DF3EA3675E7D /* Pods_DNavAssistantSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A503D6AC3E1C628832B665B /* Pods_DNavAssistantSDK_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,14 +64,6 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF619CE4B383262984849191 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		CCB898A41F7211A300FD3D8D /* DNavAssistantRequestData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNavAssistantRequestData.h; sourceTree = "<group>"; };
-		CCB898A51F7211A300FD3D8D /* DNavAssistantRequestData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNavAssistantRequestData.m; sourceTree = "<group>"; };
-		CCB898A71F7213F800FD3D8D /* NSData+DNavAssistantSDKExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+DNavAssistantSDKExtension.h"; sourceTree = "<group>"; };
-		CCB898A81F7213F800FD3D8D /* NSData+DNavAssistantSDKExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+DNavAssistantSDKExtension.m"; sourceTree = "<group>"; };
-		CCC53BA41F710AFE00BE6053 /* DNavAssistantSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNavAssistantSDK.h; sourceTree = "<group>"; };
-		CCC53BA51F710AFE00BE6053 /* DNavAssistantSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNavAssistantSDK.m; sourceTree = "<group>"; };
-		CCC53BCD1F71180700BE6053 /* DNavBlockProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNavBlockProperty.h; sourceTree = "<group>"; };
-		CCC53BCF1F71194A00BE6053 /* DNavStaticString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNavStaticString.h; sourceTree = "<group>"; };
 		CDD17A20129217D270260A54 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DE60DFAE21D022D5FF77EFB8 /* Pods-DNavAssistantSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNavAssistantSDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNavAssistantSDK_Tests/Pods-DNavAssistantSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E9FA3695CB1468960EF20785 /* DNavAssistantSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DNavAssistantSDK.podspec; path = ../DNavAssistantSDK.podspec; sourceTree = "<group>"; };
@@ -213,14 +200,6 @@
 		CCC53BA31F710AB600BE6053 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CCC53BCD1F71180700BE6053 /* DNavBlockProperty.h */,
-				CCC53BCF1F71194A00BE6053 /* DNavStaticString.h */,
-				CCC53BA41F710AFE00BE6053 /* DNavAssistantSDK.h */,
-				CCC53BA51F710AFE00BE6053 /* DNavAssistantSDK.m */,
-				CCB898A41F7211A300FD3D8D /* DNavAssistantRequestData.h */,
-				CCB898A51F7211A300FD3D8D /* DNavAssistantRequestData.m */,
-				CCB898A71F7213F800FD3D8D /* NSData+DNavAssistantSDKExtension.h */,
-				CCB898A81F7213F800FD3D8D /* NSData+DNavAssistantSDKExtension.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -276,7 +255,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = A;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "GL-ZHU";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
@@ -370,12 +349,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DNavAssistantSDK_Example/Pods-DNavAssistantSDK_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BabyBluetooth/BabyBluetooth.framework",
-				"${BUILT_PRODUCTS_DIR}/DNavAssistantSDK/DNavAssistantSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BabyBluetooth.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DNavAssistantSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -437,13 +414,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCB898A91F7213F800FD3D8D /* NSData+DNavAssistantSDKExtension.m in Sources */,
-				CCC53BD01F71194A00BE6053 /* DNavStaticString.h in Sources */,
-				CCC53BCE1F71180700BE6053 /* DNavBlockProperty.h in Sources */,
 				6003F59E195388D20070C39A /* AAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* AViewController.m in Sources */,
-				CCC53BA61F710AFE00BE6053 /* DNavAssistantSDK.m in Sources */,
-				CCB898A61F7211A300FD3D8D /* DNavAssistantRequestData.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,19 +474,30 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -542,18 +525,29 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
