@@ -44,6 +44,18 @@
         NSLog(@"%@",response);
     }];
     
+    [sdk groundStationChannelDataControl:^(DNavAssistantDataControl *dataControl) {
+        dataControl.read(DNSearchPosition);
+    } response:^(NSDictionary *result) {
+        NSLog(@"%@",result);
+    }];
+    
+    [sdk groundStationChannelDataControl:^(DNavAssistantDataControl *dataControl) {
+        dataControl.write(DNFixPosition).longitude(120.20).latitude(20.102).height(10.21);
+    } response:^(NSDictionary *result) {
+        NSLog(@"%@",result);
+    }];
+    
 //    [sdk switchChannel:DNavAssistantSDKChannelDataControl];
 //    [sdk groundStationChannelDataControl:^(DNavAssistantDataControl *dataControl) {
 //        dataControl.read(DNSearchStar);
