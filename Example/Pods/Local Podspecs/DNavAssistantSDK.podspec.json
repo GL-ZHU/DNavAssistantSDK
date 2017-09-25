@@ -1,6 +1,6 @@
 {
   "name": "DNavAssistantSDK",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "summary": "DNavAssistantSDK.",
   "description": "TODO: 基于BabyBluetooth的封装，用于RTK接收机数据的接受，及数据解析",
   "homepage": "https://github.com/GL-ZHU/DNavAssistantSDK",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/GL-ZHU/DNavAssistantSDK.git",
-    "tag": "0.2.1"
+    "tag": "0.2.2"
   },
   "platforms": {
     "ios": "8.0"
