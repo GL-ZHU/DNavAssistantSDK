@@ -1,6 +1,6 @@
 PODS:
   - BabyBluetooth (0.7.0)
-  - DNavAssistantSDK (0.1.1):
+  - DNavAssistantSDK (0.2.0):
     - BabyBluetooth
 
 DEPENDENCIES:
@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BabyBluetooth: d50758aecf24d4a0ab9271d69f0f116d6bee51c9
-  DNavAssistantSDK: 25855fafb9a7b994f25f5ad27d63681ea2d507b5
+  DNavAssistantSDK: acf3abc9a673eeded6482eb8867d9f97c934637b
 
 PODFILE CHECKSUM: c8cbb820d458dd523d5dc6fd35acb423e8d5e6b4
 
