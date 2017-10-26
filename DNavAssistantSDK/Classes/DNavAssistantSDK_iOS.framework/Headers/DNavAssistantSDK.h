@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "DNavAssistantDataControl.h"
+@class DNavAssistantRTKBestPostData;
 
 typedef NS_ENUM(NSUInteger, DNavAssistantSDKContentStatus) {
     DNavAssistantSDKContentBegin = 0,   //开始
@@ -27,7 +28,7 @@ typedef void(^ContentSuccess)(NSString *buletoothName);
 /// 连接蓝牙失败
 typedef void(^ContentFailed)(NSString *reason);
 /// 差分系统数据响应
-typedef void(^DifferentialResponse)(NSData *response);
+typedef void(^DifferentialResponse)(DNavAssistantRTKBestPostData *postData,NSData *response);
 /// 地面站数据设置
 typedef void(^GsDataControl)(DNavAssistantDataControl *dataControl);
 /// 地面站数据处理结果
@@ -67,7 +68,9 @@ typedef void(^GsDataControlResult)(NSDictionary *result);
 
 /**
  调用此接口开始接收差分数据
-
+ postData:是基站基本的信息数据
+ response:是RTK其他数据（未解析）
+ 注意:在使用postData数据之前，首先需要判断是否为nil
  @param responseBlock 当接收到差分数据时候回触发这个回调
  */
 - (void)RTKChannelStartResponse:(DifferentialResponse)responseBlock;

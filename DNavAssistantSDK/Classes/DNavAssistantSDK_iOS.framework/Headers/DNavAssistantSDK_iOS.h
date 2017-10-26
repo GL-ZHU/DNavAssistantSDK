@@ -18,4 +18,5 @@ FOUNDATION_EXPORT const unsigned char DNavAssistantSDK_iOSVersionString[];
 #import <DNavAssistantSDK_iOS/DNavAssistantSDK.h>
 #import <DNavAssistantSDK_iOS/DNavStaticString.h>
 #import <DNavAssistantSDK_iOS/DNavAssistantDataControl.h>
+#import <DNavAssistantSDK_iOS/DNavAssistantRTKBestPostData.h>
 
