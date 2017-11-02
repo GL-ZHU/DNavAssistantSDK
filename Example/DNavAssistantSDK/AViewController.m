@@ -40,8 +40,9 @@
 - (IBAction)send:(id)sender {
     DNavAssistantSDK *sdk = [DNavAssistantSDK defaultSDK];
     
-    [sdk RTKChannelStartResponse:^(NSData *response) {
-        NSLog(@"%@",response);
+    [sdk RTKChannelStartResponse:^(DNavAssistantRTKBestPostData *postData, NSData *response) {
+        // postData 基准站数据模型
+        // response RTK响应的其他数据
     }];
     
     [sdk groundStationChannelDataControl:^(DNavAssistantDataControl *dataControl) {

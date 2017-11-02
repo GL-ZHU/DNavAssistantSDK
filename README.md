@@ -46,8 +46,9 @@ DNavAssistantSDK *sdk = [DNavAssistantSDK defaultSDK];
 #### 接收RTK频道数据
 ```ruby
 // 接收数据前，要确保已经将频道切换到DNavAssistantSDKChannelRTK
-[sdk RTKChannelStartResponse:^(NSData *response) {
-    NSLog(@"接收到RTK数据%@",response);
+[sdk RTKChannelStartResponse:^(DNavAssistantRTKBestPostData *postData, NSData *response) {
+    // postData 基准站数据模型
+    // response RTK响应的其他数据
 }];
 ```
 #### 地面站数据控制
